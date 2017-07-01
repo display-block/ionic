@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ionic.min.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../ionic/js/ionic.bundle.js" type="text/javascript"></script>
+    <script src="js/app.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+
+<ion-side-menus>
+    <ion-side-menu-content>
+
+        <ion-tabs class="tabs-icon-bottom">
+            <ion-tab title="微信" icon-on="ion-ios-chatbubble" icon-off="ion-ios-chatbubble-outline" ui-sref="message">
+                <ion-nav-view name="index">
+
+                </ion-nav-view>
+            </ion-tab>
+            <ion-tab title="通讯录" icon-on="ion-ios-personadd" icon-off="ion-ios-personadd-outline" ui-sref="friends">
+                <ion-nav-view name="person">
+
+                </ion-nav-view>
+            </ion-tab>
+            <ion-tab title="发现" icon-on="ion-ios-navigate" icon-off="ion-ios-navigate-outline" ui-sref="find">
+                <ion-nav-view name="find">
+
+                </ion-nav-view>
+            </ion-tab>
+            <ion-tab title="我" icon-on="ion-ios-person" icon-off="ion-ios-person-outline" ui-sref="setting">
+                <ion-nav-view name="mine">
+
+                </ion-nav-view>
+            </ion-tab>
+        </ion-tabs>
+
+    </ion-side-menu-content>
+
+    <!--<ion-side-menu>-->
+
+    <!--<ion-nav-view name="side">-->
+
+    <!--</ion-nav-view>-->
+    <!--</ion-side-menu>-->
+
+
+</ion-side-menus>
+</body>
+</html>

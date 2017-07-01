@@ -1,0 +1,116 @@
+<view on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+    <div class="bar bar-header bar-dark" style="margin-bottom: 40px;">
+    <h3 class="title">通讯录</h3>
+    <button class="button icon ion-person-add" ng-click="modal.show()"></button>
+</div>
+
+<ion-content>
+    <div class="item-input-inset" style="margin-top: 40px;">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon" style="position: absolute;left:46%;"></i>
+            <input type="search" placeholder="搜索" style="margin-left: 49%;width: 100%;">
+            <i class="icon ion-mic-a"></i>
+        </label>
+    </div>
+    <ul class="list">
+        <li class="item">
+            <a href="" class="icon ion-person-add"></a>
+
+                <span>新的朋友</span>
+
+        </li>
+        <li class="item">
+            <a href="" class="icon ion-person-stalker"></a>
+
+                <span>群聊</span>
+
+        </li>
+        <li class="item">
+            <a href="" class="icon ion-ios-pricetag"></a>
+                  <span>标签</span>
+        </li>
+        <li class="item">
+            <a href="" class="icon ion-ios-person"></a>
+
+                <span>公众号</span>
+
+        </li>
+
+        <li class="item item-divider">
+            X
+        </li>
+        <li class="item item-avatar">
+            <img src="img/1.png" alt=""><a href="" class="">薛之谦</a>
+        </li>
+        <li class="item item-divider">
+            Y
+        </li>
+        <li class="item item-avatar">
+            <img src="img/2.png" alt=""><a href="" class="">杨幂</a>
+        </li>
+        <li class="item item-divider">
+            Z
+        </li>
+        <li class="item item-avatar">
+            <img src="img/4.png" alt=""><a href="" class="">张碧晨</a>
+        </li>
+        <li class="item item-avatar">
+            <img src="img/3.png" alt=""><a href="" class="">张杰</a>
+
+        </li>
+        <li class="item item-avatar">
+            <img src="img/5.jpeg" alt=""><a href="" class="">赵丽颖</a>
+        </li>
+    </ul>
+</ion-content>
+</view>
+
+<script id="templates/modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-dark">
+            <h1 class="title">添加朋友</h1>
+            <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+        </ion-header-bar>
+        <ion-content>
+        <div class="item-input-inset" style="margin-top: 40px;">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+                <input type="search" placeholder="微信号/手机号" style="margin-left: 30px;">
+            </label>
+        </div>
+        <span style="margin-left: 70px;">我的微信号：woaini5201314</span><i style="margin-left: 10px;color:green" class="icon ion-android-apps"></i>
+        <ul class="list" style="margin-top: 30px;">
+            <li class="item item-icon-left item-icon-right">
+                <a class="icon ion-social-designernews"></a>
+                <h2>雷达加朋友</h2>
+                <p>添加身边的朋友</p>
+                <a class="icon ion-ios-arrow-forward"></a>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <a class="icon ion-ios-people"></a>
+                <h2>面对面建群</h2>
+                <p>与身边的朋友进入同一个群聊</p>
+                <a class="icon ion-ios-arrow-forward"></a>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <a class="icon ion-android-expand"></a>
+                <h2>扫一扫</h2>
+                <p>扫面二维码名片</p>
+                <a class="icon ion-ios-arrow-forward"></a>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <a class="icon ion-android-call"></a>
+                <h2>手机联系人</h2>
+                <p>添加通讯录中的朋友</p>
+                <a class="icon ion-ios-arrow-forward"></a>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <a class="icon ion-ios-person"></a>
+                <h2>公众号</h2>
+                <p>获取更多资讯和服务</p>
+                <a class="icon ion-ios-arrow-forward"></a>
+            </li>
+        </ul>
+        </ion-content>
+    </ion-modal-view>
+</script>

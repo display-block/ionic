@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "微软雅黑";
+}
+body{
+    background-color: #EEE;
+}
+.icon {
+    font-size: 18px;
+}
+
+.item span {
+    margin-left: 20px;
+}
+
+.item p {
+    margin-top: 4px;
+}
+.item time {
+    float: right;
+    font-size: 14px;
+    margin-top: -24px;
+}
+.item a{
+    font-size: 18px;
+}
+.item-avatar a{
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    margin-top: 8px;
+}
+.item-avatar>img:first-child{
+        border-radius: 50%;
+}
+
+.item-icon-left .icon, .item-icon-right .icon{
+    font-size: 18px;
+}
+.item-divider:nth-of-type(1) {
+    padding: 2px;
+    min-height: 15px;
+    max-height: 30px;
+}
+.item-avatar{
+    height:66px;
+    padding-left: 72px;
+    min-height: 0px;
+}
+.popup-head{
+    padding:0;
+    border:0;
+}
+.popup-body{
+    padding: 0px;
+    overflow: hidden;
+}
+.item.my-popup{
+    padding: 13px;
+    margin:10px;
+}
+.item h2{
+    margin: 0 0 2px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.has-header{
+    top:0px;
+}
